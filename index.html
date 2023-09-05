@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="theme-color" content="#535353">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="mobile-web-app-capable" content="yes">
+	
+	<link rel="apple-touch-icon" href="img/webapp-icon.png">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+	
+    <title>Pixel Run</title>
+	
+	<!-- css -->
+	<link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+	<a href="#lose" rel="leanModal" id="lose-link"></a>
+	<div id="lose" class="modal">
+		<p class="center">GAME OVER</p>
+		<p class="center" id="lose-text"></p>
+		<p class="center" id="lose-text2"></p>
+		<p class="center"><a href="index.html" id="restart-btn">Retry</a></p>
+	</div>
+
+	<div id="score">0</div>
+    <div id="distance">0m</div>
+
+    <div id="game-container">
+        <div id="player"></div>
+		<div id="ground"></div>
+    </div>
+	
+	<div id="tasks">
+		<h1 id="task"></h1>
+		<h2 id="progress"></h2>
+	</div>
+	
+	<div id="control-area">
+		<a href="#" id="jump-btn">Jump</a>
+		<a href="#" id="attack-btn">Slide</a>
+	</div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/jquery.leanModal.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

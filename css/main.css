@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+	
+body {
+	margin: 0;
+	padding: 0;
+	background: #a67c52;
+	background: #473b3b;
+	background: #f7f7f7;
+}
+
+#game-container {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 400px;
+	background-color: #f7f7f7;
+}
+
+#player {
+	position: absolute;
+	bottom: -10px;
+	left: 50px;
+	width: 56px;
+	height: 56px;
+	background-image: url(../img/running2.gif);
+	background-repeat: no-repeat; 
+	background-size: contain;
+}
+
+#ground {
+	background: url(../img/ground.png) repeat-x top left;
+	top: 400px;
+	left:0;
+	height:16px;
+	position:fixed;
+	width:100%;
+}
+
+.obstacle {
+	position: absolute;
+	bottom: 0px;
+	width: 32px;
+	height: 32px;
+	background-image: url(../img/o1.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.coin {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	background-image: url(../img/coin.png);
+	background-repeat: no-repeat; 
+	background-size: contain;
+}
+
+#score {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	color: #535353;
+	z-index: 1;
+	text-align: center;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 24px;
+}
+
+#distance {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	color: #535353;
+	z-index: 1;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 24px;
+}
+
+#jump-btn {
+	background: #535353;
+	box-shadow: 3px 3px 0px #333;
+	color: #f7f7f7;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 24px;
+	position: absolute;
+	padding: 10px 5px;
+	text-decoration: none;
+	bottom: 200px;
+	left: 30px;
+}
+
+#attack-btn {
+	background: #535353;
+	box-shadow: 3px 3px 0px #333;
+	color: #f7f7f7;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 24px;
+	position: absolute;
+	padding: 10px 5px;
+	text-decoration: none;
+	bottom: 200px;
+	right: 30px;
+	width:120px;
+	text-align:center;
+}
+
+/* RESTART BTN */
+#restart-btn {
+	background: #535353;
+	box-shadow: 3px 3px 0px #333;
+	color:#f7f7f7;
+	display:inline-block;
+	font-family: 'Press Start 2P', cursive;
+	padding:20px 0;
+	position:relative;
+	text-align:center;
+	text-decoration: none;
+	width:100%;
+}
+#restart-btn:active {
+	box-shadow:none;
+	left:3px;
+	top:3px;
+}
+#restart-btn {margin-bottom:0}
+
+
+#lose p {
+	font-family: 'Press Start 2P', cursive;
+	font-size:24px; 
+	ont-weight:700;
+	text-align: center;
+	margin:10px 0 20px 0;
+	color: #535353;
+}
+
+#lose-text,
+#lose-text2 {font-size:12px !important;}
+
+/* MODAL BOX */
+#lean_overlay {
+	background:#000;
+	display:none;
+	height:100%;
+	left:0;
+	position:fixed;
+	top:0;
+	width:100%;
+	z-index:9999;
+}
+
+.modal {
+	background:#fff;
+	border:0;
+	box-shadow:3px 3px 0 #555;
+	display:none;
+	padding:10px;
+	width:85%;
+}
